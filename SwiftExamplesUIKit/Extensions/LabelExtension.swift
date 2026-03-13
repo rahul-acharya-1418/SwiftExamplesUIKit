@@ -1,5 +1,5 @@
 //
-//  UILabelExtension.swift
+//  LabelExtension.swift
 //  SwiftExamplesUIKit
 //
 //  Created by Rahul Acharya on 12/03/26.

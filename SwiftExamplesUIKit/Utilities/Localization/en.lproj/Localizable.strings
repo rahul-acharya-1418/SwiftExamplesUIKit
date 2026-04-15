@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  SwiftExamplesUIKit
+
+  Created by Rahul Acharya on 15/04/26.
+  Copyright © 2026 Swift Examples. All rights reserved.
+*/
+
+// Mark: - How to create this file
+/// In Xcode, go to File > New > File (or Cmd+N).
+/// Search for "Strings", select Strings File, and click Next.
+/// Name the file Localizable.strings and click Create.
+
+// MARK: - Alert Titles
+"alert_title_error" = "Error";
+"alert_title_success" = "Success";
+"alert_title_warning" = "Warning";
+
+// MARK: - Validation Messages
+"validation_empty_otp" = "Please enter all 6 digits of the OTP to continue.";
+"validation_invalid_email" = "Please enter a valid email address.";
+"validation_empty_password" = "Password cannot be empty.";
+
+// MARK: - Success Messages
+"success_otp_verified" = "OTP verified successfully.";
+"success_login" = "Login successful.";
+"success_profile_updated" = "Profile updated successfully.";

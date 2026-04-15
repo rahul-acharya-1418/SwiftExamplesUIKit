@@ -8,6 +8,3 @@
 
 import Foundation
 
-enum ExampleListModel: String, CaseIterable {
-    case normalCollectionView = "CollectionView Example 1"
-}

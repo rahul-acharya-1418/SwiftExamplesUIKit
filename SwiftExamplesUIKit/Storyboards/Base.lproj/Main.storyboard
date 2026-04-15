@@ -7,6 +7,11 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TimesNewRoman.ttf">
+            <string>.SFUI-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -39,6 +44,202 @@
             </objects>
             <point key="canvasLocation" x="910.68702290076328" y="71.83098591549296"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="3fu-jl-8RS">
+            <objects>
+                <viewController storyboardIdentifier="OTPViewController" id="ynr-k0-CcP" customClass="OTPViewController" customModule="SwiftExamplesUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="glp-Os-ySL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="O8y-0d-VeA">
+                                <rect key="frame" x="20" y="401" width="353" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mxb-mx-5Sy" customClass="OTPBackgroundView" customModule="SwiftExamplesUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="42.333333333333336" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VHt-ak-Pvc" customClass="SingleDigitField" customModule="SwiftExamplesUIKit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="42.333333333333336" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="VHt-ak-Pvc" firstAttribute="leading" secondItem="mxb-mx-5Sy" secondAttribute="leading" id="Bn7-wt-Ie9"/>
+                                            <constraint firstAttribute="bottom" secondItem="VHt-ak-Pvc" secondAttribute="bottom" id="kTG-zj-0ic"/>
+                                            <constraint firstItem="VHt-ak-Pvc" firstAttribute="top" secondItem="mxb-mx-5Sy" secondAttribute="top" id="tKh-CD-xgh"/>
+                                            <constraint firstAttribute="trailing" secondItem="VHt-ak-Pvc" secondAttribute="trailing" id="ziO-pr-gQv"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OJw-Xc-vp7" customClass="OTPBackgroundView" customModule="SwiftExamplesUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="62.333333333333329" y="0.0" width="42" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Jku-Hg-IMj" customClass="SingleDigitField" customModule="SwiftExamplesUIKit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Jku-Hg-IMj" firstAttribute="leading" secondItem="OJw-Xc-vp7" secondAttribute="leading" id="PX5-PA-dPQ"/>
+                                            <constraint firstItem="Jku-Hg-IMj" firstAttribute="top" secondItem="OJw-Xc-vp7" secondAttribute="top" id="Zaf-59-AO1"/>
+                                            <constraint firstAttribute="trailing" secondItem="Jku-Hg-IMj" secondAttribute="trailing" id="gaK-Qx-nKo"/>
+                                            <constraint firstAttribute="bottom" secondItem="Jku-Hg-IMj" secondAttribute="bottom" id="pGX-Eo-Q9e"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cVZ-Im-Ngd" customClass="OTPBackgroundView" customModule="SwiftExamplesUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="124.33333333333333" y="0.0" width="42.333333333333329" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Eo-VO-UuU" customClass="SingleDigitField" customModule="SwiftExamplesUIKit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="42.333333333333336" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="6Eo-VO-UuU" secondAttribute="trailing" id="2E6-GZ-Sf6"/>
+                                            <constraint firstItem="6Eo-VO-UuU" firstAttribute="top" secondItem="cVZ-Im-Ngd" secondAttribute="top" id="bFk-my-WpD"/>
+                                            <constraint firstItem="6Eo-VO-UuU" firstAttribute="leading" secondItem="cVZ-Im-Ngd" secondAttribute="leading" id="hoT-zg-Odu"/>
+                                            <constraint firstAttribute="bottom" secondItem="6Eo-VO-UuU" secondAttribute="bottom" id="mpw-lt-vPF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFe-wA-85V" customClass="OTPBackgroundView" customModule="SwiftExamplesUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="186.66666666666666" y="0.0" width="42" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z10-mb-acA" customClass="SingleDigitField" customModule="SwiftExamplesUIKit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="z10-mb-acA" secondAttribute="bottom" id="0dk-zY-FrU"/>
+                                            <constraint firstItem="z10-mb-acA" firstAttribute="top" secondItem="RFe-wA-85V" secondAttribute="top" id="7A1-hk-74L"/>
+                                            <constraint firstItem="z10-mb-acA" firstAttribute="leading" secondItem="RFe-wA-85V" secondAttribute="leading" id="oqU-4p-ZU0"/>
+                                            <constraint firstAttribute="trailing" secondItem="z10-mb-acA" secondAttribute="trailing" id="u25-oB-kbp"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zof-04-d1G" customClass="OTPBackgroundView" customModule="SwiftExamplesUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="248.66666666666671" y="0.0" width="42.333333333333343" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sgk-d0-i5e" customClass="SingleDigitField" customModule="SwiftExamplesUIKit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="42.333333333333336" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Sgk-d0-i5e" firstAttribute="leading" secondItem="Zof-04-d1G" secondAttribute="leading" id="6Lj-GR-VQY"/>
+                                            <constraint firstAttribute="bottom" secondItem="Sgk-d0-i5e" secondAttribute="bottom" id="MPh-JR-gCL"/>
+                                            <constraint firstItem="Sgk-d0-i5e" firstAttribute="top" secondItem="Zof-04-d1G" secondAttribute="top" id="NAF-0t-gpu"/>
+                                            <constraint firstAttribute="trailing" secondItem="Sgk-d0-i5e" secondAttribute="trailing" id="ph3-Mf-KBn"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kui-aI-naA" customClass="OTPBackgroundView" customModule="SwiftExamplesUIKit" customModuleProvider="target">
+                                        <rect key="frame" x="311" y="0.0" width="42" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LJ8-Is-2Rh" customClass="SingleDigitField" customModule="SwiftExamplesUIKit" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="50"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numberPad" textContentType="one-time-code"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="LJ8-Is-2Rh" secondAttribute="bottom" id="2hv-Q5-UoR"/>
+                                            <constraint firstAttribute="trailing" secondItem="LJ8-Is-2Rh" secondAttribute="trailing" id="9CQ-bM-3cI"/>
+                                            <constraint firstItem="LJ8-Is-2Rh" firstAttribute="top" secondItem="Kui-aI-naA" secondAttribute="top" id="I0i-cY-bVy"/>
+                                            <constraint firstItem="LJ8-Is-2Rh" firstAttribute="leading" secondItem="Kui-aI-naA" secondAttribute="leading" id="KyY-wV-ef9"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Ory-V3-gdR"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsB-3e-U0A">
+                                <rect key="frame" x="20" y="501" width="353" height="38"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="0Md-Fu-et9">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="50"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFUI-Regular" family=".AppleSystemUIFont" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="8" maxX="0.0" maxY="8"/>
+                                <state key="normal" title="Verify">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="verifyButtonClick:" destination="ynr-k0-CcP" eventType="touchUpInside" id="WfX-UA-rkY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Didn't you receive any code?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uj0-dF-VNS">
+                                <rect key="frame" x="87.333333333333329" y="589" width="218.66666666666669" height="20.333333333333371"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Resend code in 0:59" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uf2-zd-nFr">
+                                <rect key="frame" x="118" y="619.33333333333337" width="157" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Mp-HL-3tW">
+                                <rect key="frame" x="118" y="619.33333333333337" width="157" height="34"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Resend Now"/>
+                                <connections>
+                                    <action selector="resendNowButtonClick:" destination="ynr-k0-CcP" eventType="touchUpInside" id="sCJ-iL-RCD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="uen-40-qDs"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Uf2-zd-nFr" firstAttribute="top" secondItem="uj0-dF-VNS" secondAttribute="bottom" constant="10" id="AXj-vC-2qk"/>
+                            <constraint firstItem="7Mp-HL-3tW" firstAttribute="top" secondItem="Uf2-zd-nFr" secondAttribute="top" id="RTr-as-r9T"/>
+                            <constraint firstItem="7Mp-HL-3tW" firstAttribute="bottom" secondItem="Uf2-zd-nFr" secondAttribute="bottom" id="XHJ-0P-KLn"/>
+                            <constraint firstItem="7Mp-HL-3tW" firstAttribute="leading" secondItem="Uf2-zd-nFr" secondAttribute="leading" id="azG-Tb-fQe"/>
+                            <constraint firstItem="uj0-dF-VNS" firstAttribute="centerX" secondItem="glp-Os-ySL" secondAttribute="centerX" id="bBQ-9F-OeX"/>
+                            <constraint firstItem="O8y-0d-VeA" firstAttribute="leading" secondItem="uen-40-qDs" secondAttribute="leading" constant="20" id="c9o-2B-btA"/>
+                            <constraint firstItem="dsB-3e-U0A" firstAttribute="top" secondItem="O8y-0d-VeA" secondAttribute="bottom" constant="50" id="c9w-15-Yd3"/>
+                            <constraint firstItem="uj0-dF-VNS" firstAttribute="top" secondItem="dsB-3e-U0A" secondAttribute="bottom" constant="50" id="i1N-4l-6Bf"/>
+                            <constraint firstAttribute="trailing" secondItem="O8y-0d-VeA" secondAttribute="trailing" constant="20" id="kVE-6a-hni"/>
+                            <constraint firstItem="dsB-3e-U0A" firstAttribute="trailing" secondItem="O8y-0d-VeA" secondAttribute="trailing" id="npI-xx-H7j"/>
+                            <constraint firstItem="7Mp-HL-3tW" firstAttribute="trailing" secondItem="Uf2-zd-nFr" secondAttribute="trailing" id="s6f-UX-qD0"/>
+                            <constraint firstItem="O8y-0d-VeA" firstAttribute="centerY" secondItem="glp-Os-ySL" secondAttribute="centerY" id="vu4-y0-ESL"/>
+                            <constraint firstItem="dsB-3e-U0A" firstAttribute="leading" secondItem="O8y-0d-VeA" secondAttribute="leading" id="xgN-BI-Cph"/>
+                            <constraint firstItem="Uf2-zd-nFr" firstAttribute="centerX" secondItem="glp-Os-ySL" secondAttribute="centerX" id="z8k-Pm-Dim"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="otpTextFieldFive" destination="Sgk-d0-i5e" id="EgV-aU-iIY"/>
+                        <outlet property="otpTextFieldFour" destination="z10-mb-acA" id="Gog-D9-gFo"/>
+                        <outlet property="otpTextFieldOne" destination="VHt-ak-Pvc" id="oy9-Q2-STz"/>
+                        <outlet property="otpTextFieldSix" destination="LJ8-Is-2Rh" id="W4n-jn-tKY"/>
+                        <outlet property="otpTextFieldThree" destination="6Eo-VO-UuU" id="f1X-6t-hLx"/>
+                        <outlet property="otpTextFieldTwo" destination="Jku-Hg-IMj" id="BJ6-Kk-rBX"/>
+                        <outlet property="resendCodeLabel" destination="Uf2-zd-nFr" id="aWu-g1-niQ"/>
+                        <outlet property="resendNowButton" destination="7Mp-HL-3tW" id="JYH-ej-3EV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b8D-CB-qD5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839" y="72"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="6el-p4-Wed">
             <objects>
@@ -61,6 +262,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

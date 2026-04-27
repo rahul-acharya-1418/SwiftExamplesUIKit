@@ -5,6 +5,6 @@ platform :ios, '15.0'
 
 target 'SwiftExamplesUIKit' do
   use_frameworks!
-  pod 'Toast-Swift'
+  pod 'Toast-Swift' # show toast view
 end
 

@@ -34,6 +34,11 @@ class OTPViewController: UIViewController {
         setupConfig()
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+        stopTimer()
+    }
+    
     @IBAction func resendNowButtonClick(_ sender: UIButton) {
         print("resend otp called")
     }

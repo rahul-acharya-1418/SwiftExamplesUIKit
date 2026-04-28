@@ -1,35 +1,37 @@
 //
-//  OTPBackgroundView.swift
+//  ViewClass.swift
 //  SwiftExamplesUIKit
 //
-//  Created by Rahul Acharya on 15/04/26.
+//  Created by Rahul Acharya on 28/04/26.
 //  Copyright © 2026 Swift Examples. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class OTPBackgroundView: UIView {
+
+class StepRoundCornerView: UIView {
     
+    // This method is called when the view is loaded from a nib or storyboard
     override func awakeFromNib() {
         super.awakeFromNib()
-        setupUI()
+        setupConfig()
     }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setupUI()
+        setupConfig()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setupUI()
+        setupConfig()
     }
     
-    private func setupUI() {
-        backgroundColor = .clear
-        layer.borderWidth = 1
-        layer.borderColor = UIColor.white.cgColor
+    func setupConfig() {
         clipsToBounds = true
-        layer.cornerRadius = 8
+        layer.cornerRadius = bounds.size.width / 2.0
+        backgroundColor = .systemBlue
     }
 }
+

@@ -54,7 +54,10 @@ extension SEHomeViewController: UITableViewDelegate, UITableViewDataSource {
         case .normalCollectionView:
             break
         case .otpScreen:
-            let otpVC = OTPViewController.instantiate(from: .main)
+            let otpVC = SEOTPViewController.instantiate(from: .main)
+            self.navigationController?.pushViewController(otpVC, animated: true)
+        case .attributedString:
+            let otpVC = SEAttributedViewController.instantiate(from: .main)
             self.navigationController?.pushViewController(otpVC, animated: true)
         }
     }

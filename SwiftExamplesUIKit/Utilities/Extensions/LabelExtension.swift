@@ -52,4 +52,40 @@ extension UILabel {
         
         self.attributedText = attributed
     }
+    
+    
+    func makeHighlightedText(
+        highlights: [String],
+        baseColor: UIColor = .white,
+        highlightColor: UIColor = .yellow,
+        font: UIFont
+    )  {
+        guard let fullText = self.text else {
+            return
+        }
+        
+        let attributedText = NSMutableAttributedString(string: fullText)
+        
+        // Base style
+        let baseAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: baseColor,
+            .font: font
+        ]
+        attributedText.addAttributes(baseAttributes, range: NSRange(location: 0, length: fullText.count))
+        
+        // Highlight words
+        let highlightAttributes: [NSAttributedString.Key: Any] = [
+            .foregroundColor: highlightColor,
+            .font: font
+        ]
+        
+        for word in highlights {
+            if let range = fullText.range(of: word) {
+                let nsRange = NSRange(range, in: fullText)
+                attributedText.addAttributes(highlightAttributes, range: nsRange)
+            }
+        }
+        
+        self.attributedText = attributedText
+    }
 }

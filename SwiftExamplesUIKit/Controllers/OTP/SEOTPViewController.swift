@@ -1,5 +1,5 @@
 //
-//  OTPViewController.swift
+//  SEOTPViewController.swift
 //  SwiftExamplesUIKit
 //
 //  Created by Rahul Acharya on 15/04/26.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OTPViewController: UIViewController {
+class SEOTPViewController: UIViewController {
     
     @IBOutlet weak var otpTextFieldOne: SingleDigitField!
     @IBOutlet weak var otpTextFieldTwo: SingleDigitField!

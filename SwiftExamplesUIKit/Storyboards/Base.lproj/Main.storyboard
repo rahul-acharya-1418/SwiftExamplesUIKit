@@ -47,7 +47,7 @@
         <!--View Controller-->
         <scene sceneID="3fu-jl-8RS">
             <objects>
-                <viewController storyboardIdentifier="OTPViewController" id="ynr-k0-CcP" customClass="OTPViewController" customModule="SwiftExamplesUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SEOTPViewController" id="ynr-k0-CcP" customClass="SEOTPViewController" customModule="SwiftExamplesUIKit" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="glp-Os-ySL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -239,6 +239,77 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b8D-CB-qD5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1839" y="72"/>
+        </scene>
+        <!--Attributed View Controller-->
+        <scene sceneID="Pwa-bP-xJ7">
+            <objects>
+                <viewController storyboardIdentifier="SEAttributedViewController" id="6s1-gn-Tg8" customClass="SEAttributedViewController" customModule="SwiftExamplesUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8ZP-8H-1mh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyR-1q-Kue">
+                                <rect key="frame" x="20" y="138" width="353" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzR-MV-ZGN">
+                                <rect key="frame" x="20" y="198.66666666666666" width="353" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdF-dN-gFI">
+                                <rect key="frame" x="20" y="259.33333333333331" width="353" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pqh-PB-UKV">
+                                <rect key="frame" x="20" y="320" width="353" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q71-An-tDT">
+                                <rect key="frame" x="20" y="380.66666666666669" width="353" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LQE-1W-aYY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xzR-MV-ZGN" firstAttribute="leading" secondItem="qyR-1q-Kue" secondAttribute="leading" id="1p3-Ms-Xlv"/>
+                            <constraint firstItem="q71-An-tDT" firstAttribute="trailing" secondItem="pqh-PB-UKV" secondAttribute="trailing" id="1wm-PL-2gR"/>
+                            <constraint firstItem="RdF-dN-gFI" firstAttribute="leading" secondItem="xzR-MV-ZGN" secondAttribute="leading" id="2Fl-VH-cD8"/>
+                            <constraint firstItem="pqh-PB-UKV" firstAttribute="leading" secondItem="RdF-dN-gFI" secondAttribute="leading" id="CkH-m5-4P4"/>
+                            <constraint firstItem="qyR-1q-Kue" firstAttribute="leading" secondItem="LQE-1W-aYY" secondAttribute="leading" constant="20" id="DlE-mQ-e5R"/>
+                            <constraint firstItem="RdF-dN-gFI" firstAttribute="trailing" secondItem="xzR-MV-ZGN" secondAttribute="trailing" id="EBZ-Wm-JKp"/>
+                            <constraint firstItem="q71-An-tDT" firstAttribute="top" secondItem="pqh-PB-UKV" secondAttribute="bottom" constant="20" id="Pbu-zU-Jnt"/>
+                            <constraint firstItem="q71-An-tDT" firstAttribute="leading" secondItem="pqh-PB-UKV" secondAttribute="leading" id="RWv-n0-8DA"/>
+                            <constraint firstItem="RdF-dN-gFI" firstAttribute="top" secondItem="xzR-MV-ZGN" secondAttribute="bottom" constant="20" id="Vlk-cT-LXT"/>
+                            <constraint firstItem="xzR-MV-ZGN" firstAttribute="top" secondItem="qyR-1q-Kue" secondAttribute="bottom" constant="20" id="Zpv-ZZ-xTl"/>
+                            <constraint firstItem="xzR-MV-ZGN" firstAttribute="trailing" secondItem="qyR-1q-Kue" secondAttribute="trailing" id="aXp-el-QqY"/>
+                            <constraint firstItem="pqh-PB-UKV" firstAttribute="top" secondItem="RdF-dN-gFI" secondAttribute="bottom" constant="20" id="bPc-du-haU"/>
+                            <constraint firstItem="pqh-PB-UKV" firstAttribute="trailing" secondItem="RdF-dN-gFI" secondAttribute="trailing" id="bcv-8Z-Hpb"/>
+                            <constraint firstItem="LQE-1W-aYY" firstAttribute="trailing" secondItem="qyR-1q-Kue" secondAttribute="trailing" constant="20" id="q8d-nU-4bn"/>
+                            <constraint firstItem="qyR-1q-Kue" firstAttribute="top" secondItem="LQE-1W-aYY" secondAttribute="top" constant="20" id="vVc-a9-BeT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fifthLabel" destination="q71-An-tDT" id="OUP-Wa-bVf"/>
+                        <outlet property="firstLabel" destination="qyR-1q-Kue" id="MuF-8E-Sao"/>
+                        <outlet property="fourthLabel" destination="pqh-PB-UKV" id="NCN-xt-ehX"/>
+                        <outlet property="secondLabel" destination="xzR-MV-ZGN" id="a2O-kU-yIi"/>
+                        <outlet property="thirdLabel" destination="RdF-dN-gFI" id="Lgi-uS-d25"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yks-7p-EaS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2760" y="72"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6el-p4-Wed">

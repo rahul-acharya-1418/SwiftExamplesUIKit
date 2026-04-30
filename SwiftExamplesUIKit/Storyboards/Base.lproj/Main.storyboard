@@ -311,6 +311,93 @@
             </objects>
             <point key="canvasLocation" x="2760" y="72"/>
         </scene>
+        <!--Action Sheet View Controller-->
+        <scene sceneID="cia-I2-YkZ">
+            <objects>
+                <viewController storyboardIdentifier="SEActionSheetViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Jx0-Xz-bS8" customClass="SEActionSheetViewController" customModule="SwiftExamplesUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UV1-GL-Pmh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="g3N-jh-G4D">
+                                <rect key="frame" x="180.66666666666666" y="409" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WlD-90-iuM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="g3N-jh-G4D" firstAttribute="centerX" secondItem="UV1-GL-Pmh" secondAttribute="centerX" id="CJI-om-bqK"/>
+                            <constraint firstItem="g3N-jh-G4D" firstAttribute="centerY" secondItem="UV1-GL-Pmh" secondAttribute="centerY" id="N6n-82-XAd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="paymentTextField" destination="g3N-jh-G4D" id="gOU-wm-cy4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a0c-O6-VgA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3594" y="81"/>
+        </scene>
+        <!--Date Picker View Controller-->
+        <scene sceneID="arm-Qh-9vx">
+            <objects>
+                <viewController storyboardIdentifier="SEDatePickerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="a1n-4l-xnb" customClass="SEDatePickerViewController" customModule="SwiftExamplesUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BM4-Q5-viN">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H96-4E-Tsa">
+                                <rect key="frame" x="180.66666666666666" y="409" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="e0Z-ay-NNQ"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="H96-4E-Tsa" firstAttribute="centerX" secondItem="BM4-Q5-viN" secondAttribute="centerX" id="CkS-ob-6MT"/>
+                            <constraint firstItem="H96-4E-Tsa" firstAttribute="centerY" secondItem="BM4-Q5-viN" secondAttribute="centerY" id="fm0-Uz-bdW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateTextField" destination="H96-4E-Tsa" id="EQC-QF-g56"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uav-WY-ZHg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4349" y="75"/>
+        </scene>
+        <!--Picker View View Controller-->
+        <scene sceneID="cC7-ez-jA9">
+            <objects>
+                <viewController storyboardIdentifier="SEPickerViewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Hqc-WP-rqM" customClass="SEPickerViewViewController" customModule="SwiftExamplesUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2hJ-Ka-6UU">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZJO-gd-Pir">
+                                <rect key="frame" x="180.66666666666666" y="409" width="32" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jcq-nS-9BS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZJO-gd-Pir" firstAttribute="centerY" secondItem="2hJ-Ka-6UU" secondAttribute="centerY" id="iSq-3V-eeQ"/>
+                            <constraint firstItem="ZJO-gd-Pir" firstAttribute="centerX" secondItem="2hJ-Ka-6UU" secondAttribute="centerX" id="k8C-Cd-YIU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="paymentMethodTextField" destination="ZJO-gd-Pir" id="kak-VH-fY1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g5X-bV-v6v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5065" y="72"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="6el-p4-Wed">
             <objects>

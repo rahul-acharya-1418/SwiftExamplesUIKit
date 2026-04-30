@@ -57,8 +57,17 @@ extension SEHomeViewController: UITableViewDelegate, UITableViewDataSource {
             let otpVC = SEOTPViewController.instantiate(from: .main)
             self.navigationController?.pushViewController(otpVC, animated: true)
         case .attributedString:
-            let otpVC = SEAttributedViewController.instantiate(from: .main)
-            self.navigationController?.pushViewController(otpVC, animated: true)
+            let vc = SEAttributedViewController.instantiate(from: .main)
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .actionSheet:
+            let vc = SEActionSheetViewController.instantiate(from: .main)
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .datePicker:
+            let vc = SEDatePickerViewController.instantiate(from: .main)
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .picker:
+            let vc = SEPickerViewViewController.instantiate(from: .main)
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

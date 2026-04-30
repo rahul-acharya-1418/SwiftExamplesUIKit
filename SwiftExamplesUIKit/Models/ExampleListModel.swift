@@ -12,4 +12,7 @@ enum ExampleListModel: String, CaseIterable {
     case normalCollectionView = "CollectionView Example 1"
     case otpScreen = "OTP Screen"
     case attributedString = "Attributed String"
+    case actionSheet = "actionSheet"
+    case datePicker = "datePicker"
+    case picker = "picker"
 }

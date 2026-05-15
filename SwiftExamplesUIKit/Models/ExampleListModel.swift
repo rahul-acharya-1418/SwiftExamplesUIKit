@@ -15,4 +15,5 @@ enum ExampleListModel: String, CaseIterable {
     case actionSheet = "actionSheet"
     case datePicker = "datePicker"
     case picker = "picker"
+    case coreData = "coreData"
 }

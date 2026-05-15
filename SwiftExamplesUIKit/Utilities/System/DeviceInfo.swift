@@ -33,9 +33,7 @@ final class DeviceInfo {
         return Bundle.main.infoDictionary?["CFBundleVersion"] as? String ?? "0"
     }
     
-    
     // MARK: - Device Model
-    
     static var deviceModel: String {
         let identifier = deviceIdentifier()
         return deviceMap[identifier] ?? identifier
@@ -55,7 +53,6 @@ final class DeviceInfo {
     }
     
     // MARK: - Model Map (add more as needed)
-    
     private static let deviceMap: [String: String] = [
         // iPhone
         "iPhone15,2": "iPhone 14 Pro",
@@ -77,7 +74,6 @@ final class DeviceInfo {
     ]
     
     // MARK: - Device Info
-    
     static var isiPad: Bool {
         return UIDevice.current.userInterfaceIdiom == .pad
     }
@@ -130,4 +126,3 @@ final class DeviceInfo {
          """
      }
 }
-

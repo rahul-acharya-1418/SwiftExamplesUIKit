@@ -17,7 +17,6 @@ class SEActionSheetViewController: UIViewController, UITextFieldDelegate {
         paymentTextField.delegate = self
     }
     
-    
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         
         if textField == paymentTextField {

@@ -68,6 +68,9 @@ extension SEHomeViewController: UITableViewDelegate, UITableViewDataSource {
         case .picker:
             let vc = SEPickerViewViewController.instantiate(from: .main)
             self.navigationController?.pushViewController(vc, animated: true)
+        case .coreData:
+            let vc = SEPickerViewViewController.instantiate(from: .main)
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

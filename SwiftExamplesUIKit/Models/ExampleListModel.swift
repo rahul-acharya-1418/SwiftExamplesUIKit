@@ -16,4 +16,7 @@ enum ExampleListModel: String, CaseIterable {
     case datePicker = "datePicker"
     case picker = "picker"
     case coreData = "coreData"
+    case openURL = "open URL"
+    case locationManager = "Location Manager"
+    case fairlyPlayer = "Fairly Player"
 }

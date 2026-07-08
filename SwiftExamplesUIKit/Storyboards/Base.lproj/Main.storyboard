@@ -398,6 +398,65 @@
             </objects>
             <point key="canvasLocation" x="5065" y="72"/>
         </scene>
+        <!--Location View Controller-->
+        <scene sceneID="o6G-8p-uoV">
+            <objects>
+                <viewController storyboardIdentifier="SELocationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8eQ-FX-maC" customClass="SELocationViewController" customModule="SwiftExamplesUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S0f-ih-3Wk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yxw-fc-xte">
+                                <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VSe-Bw-frD"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Yxw-fc-xte" firstAttribute="centerY" secondItem="S0f-ih-3Wk" secondAttribute="centerY" id="QmZ-nn-3aC"/>
+                            <constraint firstItem="Yxw-fc-xte" firstAttribute="centerX" secondItem="S0f-ih-3Wk" secondAttribute="centerX" id="VLj-IV-rN5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="zipcode" destination="Yxw-fc-xte" id="V7j-jd-Tl0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="geV-xn-t6N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5853" y="74"/>
+        </scene>
+        <!--Fair Play Demo Controller-->
+        <scene sceneID="waR-NA-bbL">
+            <objects>
+                <viewController storyboardIdentifier="FairPlayDemoController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="meb-hn-vIP" customClass="FairPlayDemoController" customModule="SwiftExamplesUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tAa-Wq-Sb1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mYw-8q-6uC">
+                                <rect key="frame" x="159" y="408.66666666666669" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="meb-hn-vIP" eventType="touchUpInside" id="qAA-6O-c5k"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rw1-tC-stb"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mYw-8q-6uC" firstAttribute="centerX" secondItem="tAa-Wq-Sb1" secondAttribute="centerX" id="JsI-K8-NPG"/>
+                            <constraint firstItem="mYw-8q-6uC" firstAttribute="centerY" secondItem="tAa-Wq-Sb1" secondAttribute="centerY" id="o8d-Ls-2OO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LSk-45-ZGL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6777" y="61"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="6el-p4-Wed">
             <objects>

@@ -71,6 +71,19 @@ extension SEHomeViewController: UITableViewDelegate, UITableViewDataSource {
         case .coreData:
             let vc = SEPickerViewViewController.instantiate(from: .main)
             self.navigationController?.pushViewController(vc, animated: true)
+        case .openURL:
+            switch openURL("https://example.com") {
+            case .success(let url):
+                UIApplication.shared.open(url)
+            case .failure(.message(let error)):
+                showAlertWithOk(with: error)
+            }
+        case .locationManager:
+            let vc = SELocationViewController.instantiate(from: .main)
+            self.navigationController?.pushViewController(vc, animated: true)
+        case .fairlyPlayer:
+            let vc = FairPlayDemoController.instantiate(from: .main)
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

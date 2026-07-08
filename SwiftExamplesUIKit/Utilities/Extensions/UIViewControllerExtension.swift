@@ -41,6 +41,18 @@ extension UIViewController {
         self.present(alertController, animated: true, completion: nil)
     }
     
+    func openURL (_ urlString: String) -> Result <URL, URLValidationError> {
+        
+        guard let url = URL(string: urlString) else {
+            return .failure(.message(ErrorMessages.invalidURLMessage))
+        }
+        
+        guard UIApplication.shared.canOpenURL(url) else {
+            return .failure(.message(ErrorMessages.cannotOpenMessage))
+        }
+        
+        return .success(url)
+    }
     
     // Function to show success or failure toast
     func showToast(with message: String,
@@ -74,4 +86,15 @@ extension UIViewController {
 //            }
 //        }
 //    }
+}
+
+
+enum URLValidationError: Error {
+    case message(String)
+}
+
+
+struct ErrorMessages {
+    static let invalidURLMessage = "Invalid website URL."
+    static let cannotOpenMessage = "Unable to open the website."
 }

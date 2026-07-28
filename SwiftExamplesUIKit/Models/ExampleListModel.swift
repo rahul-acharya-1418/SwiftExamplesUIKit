@@ -19,4 +19,7 @@ enum ExampleListModel: String, CaseIterable {
     case openURL = "open URL"
     case locationManager = "Location Manager"
     case fairlyPlayer = "Fairly Player"
+    
+    /// pagination, api call, collection view cell 2*2
+    case pagination = "Pagination"
 }

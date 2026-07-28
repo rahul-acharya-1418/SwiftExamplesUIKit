@@ -84,6 +84,9 @@ extension SEHomeViewController: UITableViewDelegate, UITableViewDataSource {
         case .fairlyPlayer:
             let vc = FairPlayDemoController.instantiate(from: .main)
             self.navigationController?.pushViewController(vc, animated: true)
+        case .pagination:
+            let vc = SEPaginationViewController.instantiate(from: .main)
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

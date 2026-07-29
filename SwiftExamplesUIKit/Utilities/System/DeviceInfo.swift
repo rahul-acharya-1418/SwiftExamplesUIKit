@@ -126,3 +126,16 @@ final class DeviceInfo {
          """
      }
 }
+
+/*
+ 
+ print("UIScreen:", UIScreen.main.bounds)
+ print("Window:", view.window?.frame ?? .zero)
+ print("View:", view.frame)
+ print("Safe Area:", view.safeAreaInsets)
+ 
+ UIScreen: (0.0, 0.0, 414.0, 896.0)
+ Window: (0.0, 0.0, 414.0, 896.0)
+ View: (0.0, 0.0, 414.0, 896.0)
+ Safe Area: UIEdgeInsets(top: 48.0, left: 0.0, bottom: 34.0, right: 0.0)
+ */
